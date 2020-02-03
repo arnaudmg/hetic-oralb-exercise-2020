@@ -1,5 +1,6 @@
 {
   "name": "hetic-oralb-exercise-2020",
+  "private": true,
   "version": "0.1.0",
   "description": "Semaine intensive 3 Intégration web",
   "main": "index.js",
