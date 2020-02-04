@@ -16,3 +16,37 @@ section#hero {
 		}
 	}
 }
+.icon.triangle {
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 0 15px 25px;
+	border-color: transparent transparent transparent #7722ff;
+}
+
+.button{
+	width: 240px;
+	height: 50px;
+	border-radius: 50px;
+	background: #eaf2f9;
+	box-shadow:  8px 8px 22px #d7dfe5, 
+			 -8px -8px 22px #fdffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button h3{
+	margin-left: 15px;
+	color : #848484;
+	font-weight: 400;
+}
+
+.badShadow{
+	display: grid;
+	grid-column: 8/10;
+	height: 550px;
+	margin-top: 25px;
+	padding-top: 25px;
+}
