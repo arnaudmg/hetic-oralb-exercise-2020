@@ -1,28 +1,47 @@
 @use "base";
 
 header {
-	grid-column: 2 / 12;
-	display: flex;
+	grid-column: 1 / 13;
 	align-items: center;
-	justify-content: space-between;
-	padding: 1rem 0;
+	padding: 0.5rem 0;
+	box-shadow:  8px 8px 22px #d7dfe5, -8px -8px 22px #fdffff;
 
-	img {
-		height: 2.6rem;
-		margin-right: 4rem;
+	a:first-child {
+		grid-column: 2 / 4;
+
+		img {
+			height: 2.6rem;
+		}
 	}
 
-	ul {
-		padding: 0;
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
+	nav {
+		grid-column: 4 / 12;
 
-		li {
-			display: block;
-			color: #084382;
-			font-size: 1.5rem;
-			margin-left: 5vw;
+		ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			li {
+				display: block;
+				color: #084382;
+				white-space: nowrap;
+
+				&:not(:first-child) {
+					margin-left: 5vw;
+				}
+
+				a {
+					text-decoration: none;
+				}
+
+				h3 {
+					margin: 0;
+					font-size: 1.2rem;
+				}
+			}
 		}
 	}
 }
