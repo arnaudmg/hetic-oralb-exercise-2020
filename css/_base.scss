@@ -13,5 +13,11 @@ html, body {
 /* Default props */
 body {
 	font-family: $font-stack;
-   background: $color-bg;
+	background: $color-bg;
+}
+
+/* Grids */
+.grid-12 {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
 }

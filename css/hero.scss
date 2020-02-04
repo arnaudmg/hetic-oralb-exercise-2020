@@ -1,0 +1,8 @@
+@use "base";
+
+section#hero {
+	div {
+		grid-column: 2 / 8;
+		background: red;
+	}
+}
