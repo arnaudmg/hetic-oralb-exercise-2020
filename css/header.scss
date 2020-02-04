@@ -1,0 +1,31 @@
+@use "base";
+
+header {
+	box-sizing: border-box;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+
+	img {
+		height: 2.1rem;
+		margin-right: 4rem;
+	}
+
+	ul {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		li {
+			display: block;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #084382;
+			font-size: 1.1rem;
+			margin-left: 3rem;
+		}
+	}
+}

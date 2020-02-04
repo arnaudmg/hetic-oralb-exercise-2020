@@ -2,6 +2,7 @@
 $font-stack: "SF Pro Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
 /* Colors */
+$color-bg: #ebf3fa;
 
 /* Reset */
 html, body {
@@ -12,4 +13,5 @@ html, body {
 /* Default props */
 body {
 	font-family: $font-stack;
+   background: $color-bg;
 }
