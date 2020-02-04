@@ -10,7 +10,7 @@
   "scripts": {
     "start": "parcel *.html --no-cache",
     "build": "parcel build *.html",
-    "now-build": "parcel build index.html && mv dist public"
+    "deploy": "npm run build && now --prod dist"
   },
   "repository": {
     "type": "git",
