@@ -3,6 +3,13 @@ section#hero {
 
 	div {
 		grid-column: 2 / 8;
-		background: red;
+
+		h1 {
+			font-weight: 800;
+			font-size: 5rem;
+			background: linear-gradient(to right, #9c0eff, #2640de);
+			background-clip: text;
+			color: transparent;
+		}
 	}
 }
