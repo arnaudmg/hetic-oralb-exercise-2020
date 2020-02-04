@@ -8,6 +8,7 @@ section#hero {
 			font-weight: 800;
 			font-size: 5rem;
 			background: linear-gradient(to right, #9c0eff, #2640de);
+			-webkit-background-clip: text;
 			background-clip: text;
 			color: transparent;
 		}
