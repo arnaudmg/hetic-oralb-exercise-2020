@@ -3,18 +3,66 @@ html, body {
 }
 
 body {
-	padding-bottom: 50vh;
-	background: white;
+	background: black;
+	color: white;
+	height: 1000vh;
 }
 
-h1 {
+div.debug-overlay {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 1000vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+span.scroll-marker {
+	border-bottom: 4px solid red;
+	width: 100%;
+}
+
+body > h1 {
+	text-align: center;
 	margin-bottom: 100vh;
 }
 
+section {
+	height: 400vh;
+	padding: 40px;
+}
+
 div.demo {
-	background: black;
+	background: white;
 	border-radius: 30px;
 	width: 40%;
 	height: 300px;
-	margin: 0 auto;
+	transition: width .7s ease-out;
+
+	position: sticky;
+	top: 30vh;
+}
+
+div.demo.enlarged {
+	width: 60%;
+}
+
+div.demotext {
+	height: 100vh;
+	padding-left: 40vw;
+	padding-bottom: 20vh;
+	box-sizing: border-box;
+}
+
+div.demotext h1 {
+	position: sticky;
+	top: 45%;
+}
+
+div#enlarge-trigger {
+	padding-left: 60vw;
+	background: yellow;
 }
