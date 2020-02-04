@@ -1,7 +1,10 @@
 @use "base";
 
 header {
-	grid-column: 1 / 13;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
 	align-items: center;
 	padding: 0.5rem 0;
 	box-shadow:  8px 8px 22px #d7dfe5, -8px -8px 22px #fdffff;
