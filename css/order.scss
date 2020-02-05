@@ -1,0 +1,26 @@
+@use 'base';
+
+section#orderIntro{
+	grid-column: 1 / 13;
+    min-height: 80vh;
+    div{
+        width: 900px;
+        background-image: url(/img/order_toothbrush.png);
+        background-position: bottom left;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+		h1 {
+            grid-column: 2 /6;
+			font-weight: 800;
+			font-size: 3.5rem;
+			margin: 15vh 0;
+			margin-bottom: 3rem;
+			background: base.$gradient;
+			-webkit-background-clip: text;
+			background-clip: text;
+            color: transparent;
+            z-index: 0;
+            margin-left: 300px;
+        }
+}
