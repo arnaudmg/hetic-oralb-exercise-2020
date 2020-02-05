@@ -8,7 +8,7 @@
     "not dead"
   ],
   "scripts": {
-    "start": "parcel *.html css/*.scss --no-cache",
+    "start": "parcel *.html --no-cache",
     "build": "parcel build *.html",
     "deploy": "npm run build && now --prod dist"
   },

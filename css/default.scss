@@ -1,0 +1,90 @@
+@use "base";
+
+/* Reset */
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Fonts */
+h3 {
+	font-size: 1.4rem;
+}
+
+/* Default props */
+body {
+	font-family: base.$font-stack;
+	background: base.$color-bg;
+
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+body > * {
+	width: 100vw;
+	box-sizing: border-box;
+}
+
+/* Grids */
+.grid-12 {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+/* UI elements */
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+
+	padding: 0.5rem 1.5rem;
+	border-radius: 50px;
+	background: #eaf2f9;
+	box-shadow:  8px 8px 22px #d7dfe5, -8px -8px 22px #fdffff;
+
+	transition: box-shadow 0.4s ease-out, background 0.4s ease-out,;
+	cursor: pointer;
+
+	&:hover, &:active {
+		box-shadow: 8px 8px 11px #eaf2f9, -8px -8px 22px #fdffff;
+		background: #7722ff;
+	}
+
+	& > a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		margin-left: 1rem;
+		white-space: nowrap;
+		font-weight: 600;
+		color: #7722ff;
+		transition: color 0.4s ease-out;
+	}
+
+	&:hover h1, &:hover h2, &:hover h3, &:hover h4, &:hover h5, &:hover h6 {
+		color: white;
+	}
+
+	&:hover i.icon {
+		background: white;
+		border-color: white;
+	}
+}
+
+/* Icons */
+i.icon.triangle {
+	display: block;
+
+	// .triangle {
+		width: 1.2rem;
+		height: 1.4rem;
+		background: base.$purple;
+		clip-path: polygon(0 0, 0% 100%, 100% 50%);
+	// }
+}
