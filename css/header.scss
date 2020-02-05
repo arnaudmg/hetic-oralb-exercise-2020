@@ -2,11 +2,15 @@
 
 header {
 	position: fixed;
+	background: base.$color-bg;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	width: 100vw;
+	height: 4rem;
 	align-items: center;
 	padding: 0.5rem 0;
+	box-sizing: border-box;
 	box-shadow:  8px 8px 22px #d7dfe5, -8px -8px 22px #fdffff;
 
 	a:first-child {
