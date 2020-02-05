@@ -42,13 +42,32 @@ section#orderIntro {
     height: 70%;
     max-width: 50rem;
     background-color:#e9f1f8 ;
-    padding: 1.5rem 3rem 3rem 3rem;
+    padding: 1rem 3rem 4rem 3rem;
     margin: auto;
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
 .formContainer h2{
     font-size: 2rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
 }
+.steps{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.steps li{
+    display: inline-block;
+    margin: 20px;
+    color: #ccc;
+    padding-bottom: 5px;
+}
+.steps li.is-active{
+    border-bottom: 1px solid #7722ff;
+    color: #7722ff;
+  }
 input{
     display: block;
     width: 100%;
