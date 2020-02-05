@@ -1,46 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Précommandez votre Oral-B iO</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- stylesheets -->
-		<link rel="stylesheet" href="css/fonts.scss">
-        <link rel="stylesheet" href="css/header.scss">
-        <link rel="stylesheet" href="css/order.scss">
-	</head>
-	<body>
-		<header class="grid-12">
-			<a href="https://oralb.fr" target="_blank">
-				<img src="img/logoOralB.png" alt="logo de la marque Oral-B">
-			</a>
-			<nav>
-				<ul>
-					<li>
-						<a href="#">
-							<h3>Présentation</h3>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<h3>Qui sommes-nous</h3>
-						</a>
-					</li>
-					<li class="button">
-						<a href="#">
-							<i class="icon triangle"></i>
-							<h3>Précommander</h3>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<section id="orderIntro" class="grid-12">
-			<div>
-                <h1>La dernière étape<br>de votre brossage.</h1>  
-            </div>
-        </section>
-	</body>
+    <title>Précommandez votre Oral-B iO</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/fonts.scss">
+    <link rel="stylesheet" href="css/header.scss">
+    <link rel="stylesheet" href="css/order.scss">
+</head>
+
+<body>
+    <header class="grid-12">
+        <a href="https://oralb.fr" target="_blank">
+            <img src="img/logoOralB.png" alt="logo de la marque Oral-B">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Présentation</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Qui sommes-nous</h3>
+                    </a>
+                </li>
+                <li class="button">
+                    <a href="#">
+                        <i class="icon triangle"></i>
+                        <h3>Précommander</h3>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="orderIntro" class="grid-12">
+        <div class="backgroundIntro">
+            <h1>Plus qu'une étape<br>pour des dents<br>de qualité.</h1>
+        </div>
+
+        <main class="formContainer">
+            <h2>Livraison</h2>
+            <form action="POST">
+                <div class="inputGroup">
+                    <div>
+                        <label for="Name">Nom</label>
+                        <input type="text" placeholder="Nom" required>
+                    </div>
+                    <div>
+                        <label for="First Name">Prénom</label>
+                        <input type="text" placeholder="Prénom" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="Adress">Adresse</label>
+                    <input type="text" placeholder="Adresse" required>
+                    <input type="text" placeholder="Adresse (optionnel)">
+                </div>
+
+                <div class="inputGroup">
+                    <div>
+                        <label for="City">Ville</label>
+                        <input type="text" placeholder="Ville">
+                    </div>
+                    <div>
+                        <label for="CP">Code Postal</label>
+                        <input type="text" placeholder="Code Postal">
+                    </div>
+                </div>
+                <div class="inputGroup">
+                    <div>
+                        <label for="Region">Pays</label>
+                        <input type="text" placeholder="Pays">
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Téléphone</label>
+                        <input type="text" placeholder="Téléphone">
+                    </div>
+                </div>
+                <input type="submit" class="buttonSubmit"></input>
+            </form>
+        </main>
+    </section>
+</body>
+
 </html>

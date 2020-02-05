@@ -1,26 +1,119 @@
 @use 'base';
 
-section#orderIntro{
-	grid-column: 1 / 13;
+body {
+    box-sizing: border-box;
+}
+
+
+section#orderIntro {
+    grid-column: 1 / 13;
     min-height: 80vh;
-    div{
+
+    .backgroundIntro {
         width: 900px;
         background-image: url(/img/order_toothbrush.png);
         background-position: bottom left;
         background-size: contain;
         background-repeat: no-repeat;
     }
-		h1 {
-            grid-column: 2 /6;
-			font-weight: 800;
-			font-size: 3.5rem;
-			margin: 15vh 0;
-			margin-bottom: 3rem;
-			background: base.$gradient;
-			-webkit-background-clip: text;
-			background-clip: text;
-            color: transparent;
-            z-index: 0;
-            margin-left: 300px;
-        }
+
+    h1 {
+        grid-column: 2 /6;
+        font-weight: 800;
+        font-size: 3.5rem;
+        margin: 25vh 3vh;
+        margin-bottom: 3rem;
+        background: base.$gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        z-index: 0;
+        margin-left: 300px;
+    }
+}
+
+.formContainer{
+    border-radius: 51px;
+    background: #eaf2f9;
+    box-shadow:  10px 10px 20px #d0d7de, 
+                 -10px -10px 20px #ffffff;
+    grid-column: 3/7;
+    width: 160%;
+    height: 70%;
+    max-width: 50rem;
+    background-color:#e9f1f8 ;
+    padding: 1.5rem 3rem 3rem 3rem;
+    margin: auto;
+    margin-top: 7rem;
+}
+.formContainer h2{
+    font-size: 2rem;
+}
+input{
+    display: block;
+    width: 100%;
+    //color: #ddd;
+    background-color: transparent;
+    border: none;
+    border-radius: 51px;
+    padding: 0.4rem 0;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 41px;
+    background: #eaf2f9;
+    box-shadow: inset 7px 7px 6px #e5edf4, 
+                inset -7px -7px 6px #eff7fe;
+    text-indent: 10px;
+}
+
+input::placeholder{
+    color: #818181;
+}
+
+.inputGroup{
+    display: flex;
+}
+
+.inputGroup div:first-child{
+    margin-right: 3rem;
+}
+
+label {
+    margin-left: 0.6rem;
+}
+
+.buttonSubmit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+
+	padding: 0.5rem 1.5rem;
+	border-radius: 50px;
+    background: #eaf2f9;
+    color: #7722ff;
+	box-shadow:  8px 8px 22px #d7dfe5, -8px -8px 22px #fdffff;
+
+	transition: box-shadow 0.4s ease-out, background 0.4s ease-out,;
+	cursor: pointer;
+
+	&:hover, &:active {
+		box-shadow: 8px 8px 11px #eaf2f9, -8px -8px 22px #fdffff;
+        background: #7722ff;
+        color: #e5edf4;
+	}
+
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		margin-left: 1rem;
+		white-space: nowrap;
+		font-weight: 600;
+		color: #7722ff;
+		transition: color 0.4s ease-out;
+	}
+
+	&:hover h1, &:hover h2, &:hover h3, &:hover h4, &:hover h5, &:hover h6 {
+		color: white;
+	}
 }
