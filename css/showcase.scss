@@ -8,8 +8,6 @@ section#showcase {
 		grid-column: 2 / 6;
 		height: calc(100vh - 4rem);
 
-		background: url("../img/wand.png") no-repeat center center;
-		background-size: auto 90vh;
 
 		transform: scale(1.0);
 		transition: transform 0.4s ease;
@@ -17,8 +15,48 @@ section#showcase {
 		position: sticky;
 		top: 4rem;
 
+		&::before, &::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			transition: opacity 0.7s ease-out;
+		}
+
+		&::before {
+			background: url("../img/happy_wand.png") center center / auto 90vh no-repeat;
+			z-index: 3;
+		}
+
+		&::after {
+			background: url("../img/wand.png") center center / auto 90vh no-repeat;
+			opacity: 1;
+			z-index: 2;
+		}
+
 		&.enlarged {
 			transform: scale(3);
+
+			&::before {
+				opacity: 1;
+			}
+		}
+
+		&.reversed {
+			width: (100vw / 12) * 6;
+			transform: translateX((100vw / 12) * 5);
+
+			&::before {
+				transition: opacity 0s;
+			}
+
+			&::after {
+				background: url("../img/charger_bad.png") center center / auto 80vh no-repeat;
+				opacity: 1;
+			}
 		}
 	}
 
@@ -27,7 +65,11 @@ section#showcase {
 		height: 150vh;
 
 		&:not(:nth-child(2)) {
-			padding-top: 30vh;
+			padding-top: 50vh;
+		}
+
+		&.reversed {
+			grid-column: 2 / 7;
 		}
 
 		article {

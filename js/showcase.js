@@ -1,14 +1,15 @@
-const target = document.querySelector('#showcase-wand');
-const trigger = document.querySelector('#enlarge-trigger');
-const ratio = 0.6;
+function scrollAnimation(targets, trigger, className, ratio = 0.6) {
+	io = new IntersectionObserver(entries => {
+		if (entries[0].intersectionRatio >= ratio) {
+			targets.forEach(t => { t.classList.add(className) });
+		} else {
+			targets.forEach(t => { t.classList.remove(className) });
+		}
+	}, {threshold: ratio});
 
-io = new IntersectionObserver(entries => {
-	if (entries[0].intersectionRatio >= ratio) {
-		// Object is visible
-		target.classList.add('enlarged');
-	} else {
-		target.classList.remove('enlarged');
-	}
-}, {threshold: ratio});
+	io.observe(trigger);
+}
 
-io.observe(trigger);
+scrollAnimation([document.querySelector('#showcase-wand')], document.querySelector('#enlarge-trigger'), 'enlarged');
+
+scrollAnimation([document.querySelector('#showcase-wand')], document.querySelector('#reverse-trigger'), 'reversed');
