@@ -1,0 +1,165 @@
+@use 'base';
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    box-shadow: none;
+}
+
+#bgIntro {
+    background-image: url(/img/bgToothbrush.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    grid-column: 1/13;
+    transform: translateY(-100px);
+}
+
+section h1:first-child {
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 180px;
+    left: 515px;
+}
+
+section h1:nth-child(2) {
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 255px;
+    left: 600px;
+}
+
+.buttonCTA {
+    position: absolute;
+    top: 58%;
+    left: 45%;
+    box-sizing: border-box;
+    border-style: none;
+    width: 230px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background: #eaf2f9;
+    //box-shadow:  2px 2px 15px #7722ff, -2px -2px 15px #fdffff;
+
+    transition: box-shadow 0.4s ease-out, background 0.4s ease-out, ;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        box-shadow: 2px 2px 15px #eaf2f9, -2px -2px 15px #7722ff;
+        background: #7722ff;
+    }
+
+    &>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        white-space: nowrap;
+        font-weight: 600;
+        color: #7722ff;
+        transition: color 0.4s ease-out;
+    }
+
+    &:hover h1,
+    &:hover h2,
+    &:hover h3,
+    &:hover h4,
+    &:hover h5,
+    &:hover h6 {
+        color: white;
+    }
+
+    &:hover i.icon {
+        background: white;
+        border-color: white;
+    }
+}
+
+#historyHero h2 {
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 15vh 0;
+    margin-top: 1rem;
+    background: base.$gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    grid-column: 5/11;
+    margin-left: -30px;
+}
+
+#historyHero h3 {
+    font-weight: 800;
+    margin-top: 1rem;
+    background: grey;
+    opacity: 0.2;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+
+.badHistory {
+    width: 130px;
+    margin-left: -50px;
+    grid-column: 7;
+}
+
+.dates h3 {
+    transform: rotate(90deg);
+}
+
+.firstText{
+    position: absolute;
+    top: 1080px;
+    left: 240px;
+    font-size: 17rem;
+}
+
+.secondText{
+    position: absolute;
+    top: 1080px;
+    left: 635px;
+    font-size: 17rem;
+}
+
+.fundations{
+    grid-column: 2/3;
+    transform: translateY(-600px);
+    font-size: 1.3rem;
+}
+.fundations h4{
+    text-align: center;
+}
+.fundations p{
+    width: 200px;
+    text-align: center;
+}
+.now{
+    grid-column: 10/11;
+    transform: translateY(-600px);
+    font-size: 1.3rem;
+}
+.now h4{
+    text-align: center;
+}
+.now p{
+    width: 200px;
+    text-align: center;
+}
