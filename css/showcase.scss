@@ -27,12 +27,12 @@ section#showcase {
 		}
 
 		&::before {
-			background: url("../img/happy_wand.webp") center center / auto 90vh no-repeat;
+			background: url("../img/happy_wand.png") center center / auto 90vh no-repeat;
 			z-index: 3;
 		}
 
 		&::after {
-			background: url("../img/wand.webp") center center / auto 90vh no-repeat;
+			background: url("../img/wand.png") center center / auto 90vh no-repeat;
 			opacity: 1;
 			z-index: 2;
 		}
@@ -51,11 +51,11 @@ section#showcase {
 
 			&::before {
 				transition: opacity 0s;
-				background: url("../img/phone_app.webp") center center /auto 70vh no-repeat;
+				background: url("../img/phone_app.png") center center /auto 70vh no-repeat;
 			}
 
 			&::after {
-				background: url("../img/charger_bad.webp") center center / auto 80vh no-repeat;
+				background: url("../img/charger_bad.png") center center / auto 80vh no-repeat;
 				opacity: 1;
 			}
 		}
@@ -144,11 +144,11 @@ section#cta {
 
 			&::before {
 				transition: opacity 0s;
-				background: url("../img/phone_app.webp") center center /auto 70vh no-repeat;
+				background: url("../img/phone_app.png") center center /auto 70vh no-repeat;
 			}
 
 			&::after {
-				background: url("../img/charger_bad.webp") center center / auto 80vh no-repeat;
+				background: url("../img/charger_bad.png") center center / auto 80vh no-repeat;
 				opacity: 1;
 			}
 		}
