@@ -2,7 +2,7 @@
 
 section#hero {
 	min-height: 80vh;
-	background: url("../img/homefond.png") no-repeat right top;
+	background: url("../img/homefond.webp") no-repeat right top;
 	background-size: 59vw 100%;
 
 	div {
@@ -33,7 +33,7 @@ section#hero {
 	.illustration-container {
 		grid-column: 8 / 13;
 		padding-top: 4rem;
-		background: url("../img/bad_shadow.png") no-repeat center center;
+		background: url("../img/bad_shadow.webp") no-repeat center center;
 		background-size: auto 65vh;
 	}
 }
