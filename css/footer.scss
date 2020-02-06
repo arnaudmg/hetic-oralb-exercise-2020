@@ -1,9 +1,10 @@
 @use "base";
 
 footer {
-	grid-column: 1/13;
 	background: base.$gradient;
 	color: white;
+
+	clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 7%);
 
 	padding-top: 4rem;
 
