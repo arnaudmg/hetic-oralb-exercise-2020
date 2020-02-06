@@ -13,3 +13,5 @@ function scrollAnimation(targets, trigger, className, ratio = 0.6) {
 scrollAnimation([document.querySelector('#showcase-wand')], document.querySelector('#enlarge-trigger'), 'enlarged');
 
 scrollAnimation([document.querySelector('#showcase-wand')], document.querySelector('#reverse-trigger'), 'reversed');
+
+scrollAnimation([document.querySelector('#showcase-wand')], document.querySelector('#app-trigger'), 'reversed2');
